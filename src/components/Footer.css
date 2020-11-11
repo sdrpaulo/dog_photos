@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  grid-area: footer;
+}
+
+/*--Media Query--*/
+@media (min-width: 768px) {
+  .footer {
+    justify-content: flex-end;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+  }
+}

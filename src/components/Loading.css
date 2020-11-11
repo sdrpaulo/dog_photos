@@ -1,0 +1,34 @@
+.loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--black-color);
+  justify-content: center;
+  transform: translateY(-100%);
+  transition: transform 0.5s;
+  position: fixed;
+  top: 0;
+}
+
+.loading-icon {
+  width: 15rem;
+  animation: rotateIcon 2.5s linear infinite;
+}
+
+/*--JavaScript Class--*/
+.on {
+  transform: translateY(0);
+  transition: transform 0.5s;
+}
+
+/*--Kreyframes--*/
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

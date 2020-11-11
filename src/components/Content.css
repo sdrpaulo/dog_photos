@@ -1,0 +1,32 @@
+.pictures {
+  display: grid;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+  gap: 2rem 0;
+  grid-area: content;
+}
+
+/*--Media Queries--*/
+@media (min-width: 768px) {
+  .pictures {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 0;
+    width: 90%;
+    margin: 2rem auto;
+  }
+}
+
+@media (min-width: 1250px) {
+  .pictures {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pictures {
+    width: 130rem;
+  }
+}

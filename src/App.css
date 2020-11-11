@@ -1,0 +1,66 @@
+:root {
+  --main-font: sans-serif;
+  --title-font: sans-serif;
+  --blue-color: #10aded;
+  --light-blue-color: #41c7fc;
+  --black-color: #1e2a2d;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--main-font);
+  line-height: 1.8;
+  overflow-x: hidden;
+}
+
+h1,
+h1,
+h3,
+h4 {
+  font-family: var(--title-font);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30rem 1fr 5rem;
+  grid-template-areas: "header" "content" "footer";
+  background-image: url("./assets/img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+@media (min-width: 1250px) {
+  main {
+    height: 100vh;
+  }
+}
